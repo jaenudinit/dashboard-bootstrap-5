@@ -210,7 +210,6 @@ h6.section-title {
 /* Card */
 .card {
   border: none;
-  border-top: 2px solid #102C57;
   border-radius: 0.4rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -226,7 +225,10 @@ h6.section-title {
   transform: none !important;
   overflow: hidden;
 }
-
+.card.border-primary {
+  border-color: #102C57 !important;
+  border-top: 2px solid #102C57;
+}
 /* Fullscreen Card */
 .fullscreen-card {
   position: fixed !important;
@@ -246,10 +248,6 @@ h6.section-title {
 
 .text-primary {
   color: #102C57 !important;
-}
-
-.border-primary {
-  border-color: #102C57 !important;
 }
 
 /* Footer selalu di bawah */
